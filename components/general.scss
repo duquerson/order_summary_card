@@ -1,0 +1,38 @@
+/*
+1.pocicionamiento
+2.modelo de caja
+3.tipografia
+4.visuales
+5.misalaneos o otros.
+*/
+
+:root {
+    /*font of proyect*/
+    --font_principal: 'Red Hat Display', sans-serif;
+    /*colors of proyect*/
+    //primary 
+    --Pale_blue: hsl(225, 100%, 94%);
+    --Bright_blue: hsl(245, 75%, 52%);
+    //neutral
+    --Very_pale_blue: hsl(225, 100%, 98%);
+    --Desaturated_blue: hsl(224, 23%, 55%);
+    --Dark_blue: hsl(223, 47%, 23%);
+}
+
+html {
+    /*ajuste para uso del rem 1 rem = 10px para tamaño de fuente*/
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+    width: 100vw;
+    height: 40rem;
+    background: url("../images/pattern-background-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-size: 1.6rem;
+    font-family: var(--font_principal);
+    background-color: var(--Pale_blue);
+}

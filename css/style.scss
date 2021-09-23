@@ -1,0 +1,85 @@
+@use '../components/general.scss';
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    .card {
+        width: 42.7rem;
+        height: 68.7rem;
+        border-radius: 2.1rem;
+        display: flex;
+        flex-direction: column;
+        box-shadow: rgba(17, 17, 17, 0.171) 3px 3px 26px;
+        background-color: whitesmoke;
+        &__img {
+            width: 100%;
+            height: 21rem;
+            background: url('../images/illustration-hero.svg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            border-radius: 2.1rem 2.1rem 0 0;
+        }
+        h1 {
+            text-align: center;
+        }
+        p {
+            text-align: center;
+            color: var(--Desaturated_blue);
+            line-height: 1.8;
+        }
+        &__plan {
+            height: 9.0rem;
+            width: 39.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 1.1rem;
+            margin: 0 auto;
+            background-color: #F8F9FE;
+            .logo {
+                height: 5rem;
+                width: 5rem;
+                background-image: url('../images/icon-music.svg');
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+            a {
+                color: var(--Bright_blue);
+            }
+        }
+        .buton1 {
+            border: none;
+            text-decoration: none;
+            text-align: center;
+            border-radius: 1.3rem;
+            height: 4rem;
+            padding-top: 2rem;
+            color: var(--Pale_blue);
+            background-color: var(--Bright_blue);
+            box-shadow: rgba(90, 109, 138, 0.9) 0px 20px 20px -12px;
+        }
+        .buton2 {
+            border: none;
+            text-decoration: none;
+            text-align: center;
+            height: 4rem;
+            padding-top: 2rem;
+            color: var(--Desaturated_blue);
+        }
+    }
+}
+
+.attribution {
+    font-size: 1.1rem;
+    text-align: center;
+    a {
+        color: hsl(228, 45%, 44%);
+    }
+}

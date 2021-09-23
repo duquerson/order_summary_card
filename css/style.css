@@ -1,0 +1,139 @@
+@charset "UTF-8";
+/*
+1.pocicionamiento
+2.modelo de caja
+3.tipografia
+4.visuales
+5.misalaneos o otros.
+*/
+:root {
+  /*font of proyect*/
+  --font_principal: "Red Hat Display", sans-serif;
+  /*colors of proyect*/
+  --Pale_blue: hsl(225, 100%, 94%);
+  --Bright_blue: hsl(245, 75%, 52%);
+  --Very_pale_blue: hsl(225, 100%, 98%);
+  --Desaturated_blue: hsl(224, 23%, 55%);
+  --Dark_blue: hsl(223, 47%, 23%);
+}
+
+html {
+  /*ajuste para uso del rem 1 rem = 10px para tamaño de fuente*/
+  font-size: 62.5%;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100vw;
+  height: 40rem;
+  background: url("../images/pattern-background-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-size: 1.6rem;
+  font-family: var(--font_principal);
+  background-color: var(--Pale_blue);
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-items: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.container .card {
+  width: 42.7rem;
+  height: 68.7rem;
+  border-radius: 2.1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-shadow: rgba(17, 17, 17, 0.171) 3px 3px 26px;
+          box-shadow: rgba(17, 17, 17, 0.171) 3px 3px 26px;
+  background-color: whitesmoke;
+}
+.container .card__img {
+  width: 100%;
+  height: 21rem;
+  background: url("../images/illustration-hero.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 2.1rem 2.1rem 0 0;
+}
+.container .card h1 {
+  text-align: center;
+}
+.container .card p {
+  text-align: center;
+  color: var(--Desaturated_blue);
+  line-height: 1.8;
+}
+.container .card__plan {
+  height: 9rem;
+  width: 39.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 1.1rem;
+  margin: 0 auto;
+  background-color: #F8F9FE;
+}
+.container .card__plan .logo {
+  height: 5rem;
+  width: 5rem;
+  background-image: url("../images/icon-music.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.container .card__plan a {
+  color: var(--Bright_blue);
+}
+.container .card .buton1 {
+  border: none;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 1.3rem;
+  height: 4rem;
+  padding-top: 2rem;
+  color: var(--Pale_blue);
+  background-color: var(--Bright_blue);
+  -webkit-box-shadow: rgba(90, 109, 138, 0.9) 0px 20px 20px -12px;
+          box-shadow: rgba(90, 109, 138, 0.9) 0px 20px 20px -12px;
+}
+.container .card .buton2 {
+  border: none;
+  text-decoration: none;
+  text-align: center;
+  height: 4rem;
+  padding-top: 2rem;
+  color: var(--Desaturated_blue);
+}
+
+.attribution {
+  font-size: 1.1rem;
+  text-align: center;
+}
+.attribution a {
+  color: #3e52a3;
+}
