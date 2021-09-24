@@ -23,6 +23,7 @@ html {
 }
 
 body {
+  /*ajuste de fondo olas , tamaño de fuente y tipo de fuente*/
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 100vw;
@@ -37,6 +38,7 @@ body {
 }
 
 .container {
+  /*tamaño visualizacion orden del contenido*/
   width: 100vw;
   height: 100vh;
   display: -ms-grid;
@@ -47,12 +49,13 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   justify-items: center;
-  margin-top: 5%;
-  margin-bottom: 5%;
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
 .container .card {
-  width: 42.7rem;
-  height: 68.7rem;
+  /*tamaño de la tarjeta*/
+  width: 40.7rem;
+  height: 67.2rem;
   border-radius: 2.1rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -61,75 +64,128 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-shadow: rgba(17, 17, 17, 0.171) 3px 3px 26px;
-          box-shadow: rgba(17, 17, 17, 0.171) 3px 3px 26px;
-  background-color: whitesmoke;
+  -webkit-box-shadow: var(--Desaturated_blue) 0.1rem 0.6rem 1.1rem;
+          box-shadow: var(--Desaturated_blue) 0.1rem 0.6rem 1.1rem;
+  background-color: white;
+  /*edicion de contenido por secciones*/
+  /*seccion imagen*/
+  /*seccion titulo y parrafo*/
+  /*seccion contenido de planes*/
+  /*section de botones*/
 }
 .container .card__img {
   width: 100%;
   height: 21rem;
   background: url("../images/illustration-hero.svg");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 2.1rem 2.1rem 0 0;
 }
 .container .card h1 {
+  font-weight: 900;
+  margin-top: 4rem;
+  margin-bottom: 0;
   text-align: center;
 }
-.container .card p {
+.container .card .text {
   text-align: center;
+  line-height: 1.5;
+  font-weight: 700;
+  margin-top: 2.6rem;
+  margin-left: 4.3rem;
+  margin-right: 4.3rem;
+  margin-bottom: 0;
   color: var(--Desaturated_blue);
-  line-height: 1.8;
 }
 .container .card__plan {
-  height: 9rem;
-  width: 39.5rem;
+  height: 8.7rem;
+  width: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   border-radius: 1.1rem;
-  margin: 0 auto;
-  background-color: #F8F9FE;
+  margin-top: 3rem;
+  margin-bottom: 2.5rem;
+  margin-left: 2.6rem;
+  margin-right: 2.6rem;
+  padding-left: auto;
+  padding-right: auto;
+  background-color: var(--Very_pale_blue);
 }
 .container .card__plan .logo {
   height: 5rem;
   width: 5rem;
+  margin-left: 1.8rem;
   background-image: url("../images/icon-music.svg");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
 }
+.container .card__plan .card__plan--info {
+  text-align: justify;
+  margin-left: 2.4rem;
+  margin-right: 9.2rem;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.container .card__plan .card__plan--info h2 {
+  font-weight: 900;
+  font-size: 1.6rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+.container .card__plan .card__plan--info .info {
+  text-align: justify;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--Desaturated_blue);
+  margin-top: 0.6rem;
+  margin-bottom: 1.4rem;
+}
 .container .card__plan a {
+  font-weight: 900;
   color: var(--Bright_blue);
+  margin-right: 1.8rem;
 }
 .container .card .buton1 {
   border: none;
   text-decoration: none;
   text-align: center;
   border-radius: 1.3rem;
-  height: 4rem;
+  height: 3.8rem;
+  width: auto;
+  margin-left: 2.6rem;
+  margin-right: 2.6rem;
   padding-top: 2rem;
-  color: var(--Pale_blue);
+  font-size: 1.6rem;
+  font-weight: 900;
+  color: white;
   background-color: var(--Bright_blue);
-  -webkit-box-shadow: rgba(90, 109, 138, 0.9) 0px 20px 20px -12px;
-          box-shadow: rgba(90, 109, 138, 0.9) 0px 20px 20px -12px;
+  -webkit-box-shadow: var(--Desaturated_blue) 0 1.8rem 1.8rem -1.2rem;
+          box-shadow: var(--Desaturated_blue) 0 1.8rem 1.8rem -1.2rem;
 }
 .container .card .buton2 {
   border: none;
   text-decoration: none;
   text-align: center;
-  height: 4rem;
+  height: 3.8rem;
+  width: auto;
+  margin-top: 1rem;
+  margin-left: 2.6rem;
+  margin-right: 2.6rem;
   padding-top: 2rem;
+  font-size: 1.6rem;
+  font-weight: 900;
   color: var(--Desaturated_blue);
 }
 
+/*section de autor y diseño*/
 .attribution {
   font-size: 1.1rem;
   text-align: center;
