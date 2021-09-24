@@ -72,6 +72,7 @@ body {
   /*seccion titulo y parrafo*/
   /*seccion contenido de planes*/
   /*section de botones*/
+  /*seccion de hover*/
 }
 .container .card__img {
   width: 100%;
@@ -115,6 +116,7 @@ body {
   padding-left: auto;
   padding-right: auto;
   background-color: var(--Very_pale_blue);
+  /*seccion de hover*/
 }
 .container .card__plan .logo {
   height: 5rem;
@@ -153,6 +155,10 @@ body {
   color: var(--Bright_blue);
   margin-right: 1.8rem;
 }
+.container .card__plan a:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
 .container .card .buton1 {
   border: none;
   text-decoration: none;
@@ -183,6 +189,15 @@ body {
   font-size: 1.6rem;
   font-weight: 900;
   color: var(--Desaturated_blue);
+}
+.container .card .buton1:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+.container .card .buton2:hover {
+  color: var(--Dark_blue);
+  cursor: pointer;
+  opacity: 0.8;
 }
 
 /*section de autor y diseño*/

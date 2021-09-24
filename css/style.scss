@@ -97,6 +97,11 @@
                 color: var(--Bright_blue);
                 margin-right: 1.8rem;
             }
+            /*seccion de hover*/
+            a:hover {
+                cursor: pointer;
+                opacity: 0.8;
+            }
         }
         /*section de botones*/
         .buton1 {
@@ -128,6 +133,16 @@
             font-size: 1.6rem;
             font-weight: 900;
             color: var(--Desaturated_blue);
+        }
+        /*seccion de hover*/
+        .buton1:hover {
+            cursor: pointer;
+            opacity: 0.8;
+        }
+        .buton2:hover {
+            color: var(--Dark_blue);
+            cursor: pointer;
+            opacity: 0.8;
         }
     }
 }
